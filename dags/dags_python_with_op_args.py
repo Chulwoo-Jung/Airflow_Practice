@@ -13,7 +13,7 @@ with DAG(
     python_t1 = PythonOperator(
         task_id = 'python_t1',
         python_callable = regist,
-        op_args = ['Chulwoo Jung', 'Male', '2000-04-19', 'Berlin']
+        op_args = ['Chulwoo Jung', 'Male', '2000-04-19', 'Berlin']  # List Format Argument
     )
 
     python_t1
