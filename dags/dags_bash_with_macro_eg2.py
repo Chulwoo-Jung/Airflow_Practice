@@ -6,7 +6,7 @@ from airflow.sdk import DAG
 with DAG(
     dag_id="dags_bash_with_macro_eg2",
     schedule="10 0 * * 6#2",
-    start_date=pendulum.datetime(2025, 6, 20, tz="Europe/Berlin"),
+    start_date=pendulum.datetime(2025, 4, 20, tz="Europe/Berlin"),
     catchup=False
 ) as dag:
     # START_DATE: 2주전 월요일, END_DATE: 2주전 토요일
