@@ -1,6 +1,6 @@
 from airflow.sdk import DAG, task
-from airflow.providers.standard.operators.python import PythonOperator
 from airflow.providers.smtp.operators.smtp import EmailOperator
+import pendulum
 
 with DAG(
     dag_id='dags_python_email_xcom',
