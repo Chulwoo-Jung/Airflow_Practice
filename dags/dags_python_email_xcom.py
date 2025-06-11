@@ -6,6 +6,7 @@ with DAG(
     dag_id='dags_python_email_xcom',
     schedule='30 6 * * *',
     start_date=pendulum.datetime(2025, 6, 1, tz='Europe/Berlin'),
+    catchup=False
 ) as dag:
     
     @task(task_id='some_logic')
